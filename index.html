@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Players Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--Nvar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Futbolistas Store</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Carrito.html">
+                        Carrito <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <form class="d-flex mx-auto" style="width: 50%;">
+                <input class="form-control me-2" type="search" placeholder="🔍 Buscar futbolista..." aria-label="Search">
+                <button class="btn btn-primary" type="submit">Buscar</button>
+            </form>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item" id="loginNav">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Ingresar
+                    </a>
+                </li>                
+                <li class="nav-item" id="registerNav">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                        Registro
+                    </a>
+                </li>
+                <li class="nav-item" id="user-info" style="display: none;">
+                    <a class="nav-link" href="#" id="logout">Cerrar sesión (<span id="user-name"></span>)</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<!--Carrusel-->
+<div class="container d-flex justify-content-center my-4">
+    <div id="carouselExample" class="carousel slide w-50 h-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="futbolistas/futbol.jpg" class="d-block w-100" alt="Cristiano Ronaldo">
+            </div>
+            <div class="carousel-item">
+                <img src="futbolistas/champions.jpg" class="d-block w-100" alt="Lionel Messi">
+            </div>
+            <div class="carousel-item">
+                <img src="futbolistas/Soccer.jpg" class="d-block w-100" alt="Neymar Jr">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+<!-- Sección de productos -->
+<div class="container my-5">
+    <h2 class="text-center">Futbolistas en venta</h2>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/cristiano.jpg" class="card-img-top" alt="Cristiano Ronaldo">
+                <div class="card-body">
+                    <h5 class="card-title">Cristiano Ronaldo</h5>
+                    <p class="card-text">$120,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/messi.jpg" class="card-img-top" alt="Lionel Messi">
+                <div class="card-body">
+                    <h5 class="card-title">Lionel Messi</h5>
+                    <p class="card-text">$115,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/neymar.jpg" class="card-img-top" alt="Neymar Jr">
+                <div class="card-body">
+                    <h5 class="card-title">Neymar Jr</h5>
+                    <p class="card-text">$110,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/griezman.jpg" class="card-img-top" alt="Antoine Griezmann">
+                <div class="card-body">
+                    <h5 class="card-title">Antoine Griezmann</h5>
+                    <p class="card-text">$105,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/mbappe.jpg" class="card-img-top" alt="Kylian Mbappé">
+                <div class="card-body">
+                    <h5 class="card-title">Kylian Mbappé</h5>
+                    <p class="card-text">$100,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/vinicius.jpg" class="card-img-top" alt="Vinícius Jr">
+                <div class="card-body">
+                    <h5 class="card-title">Vinícius Jr</h5>
+                    <p class="card-text">$95,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/halland.jpg" class="card-img-top" alt="Erling Haaland">
+                <div class="card-body">
+                    <h5 class="card-title">Erling Haaland</h5>
+                    <p class="card-text">$90,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/salah.jpg" class="card-img-top" alt="Mohamed Salah">
+                <div class="card-body">
+                    <h5 class="card-title">Mohamed Salah</h5>
+                    <p class="card-text">$85,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/yamal.jpg" class="card-img-top" alt="Lamine Yamal">
+                <div class="card-body">
+                    <h5 class="card-title">Lamine Yamal</h5>
+                    <p class="card-text">$80,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/santi.jpg" class="card-img-top" alt="Santiago Giménez">
+                <div class="card-body">
+                    <h5 class="card-title">Santiago Giménez</h5>
+                    <p class="card-text">$75,000,000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Aquie el Login -->
+<div class="modal fade" id="loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Iniciar Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <input type="email" id="loginEmail" class="form-control mb-2" placeholder="Correo electrónico" required>
+                    <small id="emailError" class="text-danger"></small>
+
+                    <input type="password" id="loginPassword" class="form-control mb-2" placeholder="Contraseña" required>
+                    <small id="passwordError" class="text-danger"></small>
+
+                    <button type="submit" class="btn btn-primary mt-3 w-100">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal de Registro -->
+<div class="modal fade" id="registerModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Registro de Usuario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <input type="text" id="registerName" class="form-control mb-2" placeholder="Nombre completo" required>
+                    <small id="nameError" class="text-danger"></small>
+
+                    <input type="email" id="registerEmail" class="form-control mb-2" placeholder="Correo electrónico" required>
+                    <small id="registerEmailError" class="text-danger"></small>
+
+                    <input type="password" id="registerPassword" class="form-control mb-2" placeholder="Contraseña" required>
+                    <small id="registerPasswordError" class="text-danger"></small>
+
+                    <button type="submit" class="btn btn-primary mt-3 w-100">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Paginas-->
+<nav>
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+    </ul>
+  </nav>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

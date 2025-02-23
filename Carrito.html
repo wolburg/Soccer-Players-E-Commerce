@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container my-3">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="🔍 Buscar futbolista...">
+        <button class="btn btn-primary">Buscar</button>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center">Carrito de Compras de Futbolistas</h2>
+
+    <div class="text-end">
+        <a href="index.html" class="btn btn-secondary mb-4">🏠 Home</a>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/cristiano.jpg" class="card-img-top" alt="Cristiano Ronaldo">
+                <div class="card-body">
+                    <h5 class="card-title">Cristiano Ronaldo</h5>
+                    <p class="card-text">Precio: $120,000,000</p>
+                    <button class="btn btn-danger btn-sm w-100">Borrar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="futbolistas/santi.jpg" class="card-img-top" alt="Santiago Giménez">
+                <div class="card-body">
+                    <h5 class="card-title">Santiago Giménez</h5>
+                    <p class="card-text">Precio: $75,000,000</p>
+                    <button class="btn btn-danger btn-sm w-100">Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-5 p-3">
+        <h4 class="text-center">Resumen de la Compra</h4>
+        <p><strong>Total:</strong> $195,000,000</p>
+        <p><strong>Envío:</strong> Gratis 🚚</p>
+        <p><strong>Opciones de Pago:</strong> Tarjeta de crédito, PayPal, Transferencia bancaria.</p>
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-warning">Cancelar</button>
+            <button class="btn btn-success">Pagar Ahora</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
